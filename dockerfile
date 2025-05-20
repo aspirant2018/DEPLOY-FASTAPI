@@ -2,9 +2,9 @@ from python:3.10-slim
 
 WORKDIR /app
 
-COPY requirments.txt .
+COPY requirements.txt .
 
-RUN pip install --no-cach-dir -r requirments.txt
+RUN pip install --no-cach-dir -r requirements.txt
 
 
 COPY ./app /app
